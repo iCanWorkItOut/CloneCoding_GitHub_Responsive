@@ -88,6 +88,34 @@ a {
   float: right;
 }
 
+/* SUMMARY */
+.summary {
+
+}
+.summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+.summary__description {
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
+
+/* SECTION & INNER */
+.section {
+  position: relative;
+}
+.section .inner {
+  max-width: 980px;
+  margin: 0 auto; /* 가운데 정렬(가로 크기가 설정되어있어야 함) */
+  box-sizing: border-box;
+  position: relative;
+}
+
 /* HEADER */
 header {
   border-bottom: 1px solid rgba(0, 0, 0, .75);
@@ -95,9 +123,7 @@ header {
   background: #fff;
 }
 header .inner {
-  max-width: 980px;
   height: 78px;
-  margin: 0 auto; /* 가운데 정렬(가로 크기가 설정되어있어야 함) */
 }
 header .menu-group {
   display: flex;
@@ -163,4 +189,15 @@ header .sub-menu li a {
 }
 header .sub-menu li a:hover {
   color: #4078c0;
+}
+
+
+/* VISUAL */
+.section--visual {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.section--visual .inner {
+  padding: 160px 0;
 }
