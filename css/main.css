@@ -116,6 +116,7 @@ a {
   position: relative;
 }
 
+
 /* HEADER */
 header {
   border-bottom: 1px solid rgba(0, 0, 0, .75);
@@ -197,7 +198,32 @@ header .sub-menu li a:hover {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
+  background-size: cover;
+}
+.section--visual::before {
+  content: "";
+   /* section에 relative를 설정했기 때문에 .section--visaul에 안해도 됨 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* t,l,b,r 모두 0일경우 t,l 0 + 가로세로 100%와 동일 */
+  /* width: 100%;
+  height: 100%; */
+  background: rgba(0, 0, 0, .3);
 }
 .section--visual .inner {
   padding: 160px 0;
+}
+.section--visual .summary__title {
+  color: #fff;
+  font-size: 54px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
+               0 1px 25px rgba(0, 0, 0, .75);
+}
+.section--visual .summary__description {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
+               0 1px 25px rgba(0, 0, 0, .75);
 }
