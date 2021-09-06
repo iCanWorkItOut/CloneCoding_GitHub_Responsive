@@ -1,11 +1,11 @@
 (function (window, document) {
   'use strict';
-
+  
   const $toggles = document.querySelectorAll(".toggle");
   const $toggleBtn = document.querySelector("#toggle-btn");
 
   $toggleBtn.addEventListener("click", function () {
-    toggleElenets();
+    toggleElements();
   });
 
   window.addEventListener("resize", function() {
@@ -14,7 +14,7 @@
     }
   });
 
-  function toggleElenets() {
+  function toggleElements() {
     [].forEach.call($toggles, function (toggle) {
       toggle.classList.toggle("on");
     });
